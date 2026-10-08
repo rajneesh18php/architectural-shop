@@ -29,6 +29,11 @@ const Home = () => {
       {_id:1,text:"Modern Sofa Set",images:'/Images/get4.jpg',style:"45,999", icone:<FaShoppingCart/>, cross:"52,999"},
       {_id:1,text:"Premium WOoden Door",images:'/Images/get2.jpg',style:"18,999", icone:<FaShoppingCart/>, cross:"24,999"},
       {_id:1,text:"Furniture",images:'/Images/for1.jpg',style:"123", icone:<FaShoppingCart/>, cross:"2435"},
+      {_id:1,text:"Furniture",images:'/Images/for1.jpg',style:"123", icone:<FaShoppingCart/>, cross:"2435"},
+      {_id:1,text:"Furniture",images:'/Images/for1.jpg',style:"123", icone:<FaShoppingCart/>, cross:"2435"},
+      {_id:1,text:"Modern Sofa Set",images:'/Images/get4.jpg',style:"45,999", icone:<FaShoppingCart/>, cross:"52,999"},
+      {_id:1,text:"Modern Sofa Set",images:'/Images/get4.jpg',style:"45,999", icone:<FaShoppingCart/>, cross:"52,999"},
+
     ]
 
   return (
@@ -41,23 +46,23 @@ const Home = () => {
       <div className="corousel-start">
       <Carousel>
       <Carousel.Item interval={1000}>
-        <img src='Images/thes1.jpg' alt='First slide'/>
+        <img src='/Images/furntutrb9.png' alt='First slide'/>
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h3>Premium Interior</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={500}>
-        <img src='Images/sofa.jpg' alt='First slide'/>
+        <img src='/Images/furniture s2.jpg' alt='First slide'/>
         <Carousel.Caption>
-          <h3>Second slide label</h3>
+          <h3>Premium Furniture </h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src='Images/thes.png' alt='Third slide'/>
+        <img src='/Images/furnitur s3.jpg' alt='Third slide'/>
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Luxury Sofa Set</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
@@ -68,7 +73,7 @@ const Home = () => {
     {/* coloser ends */}
 
           <div className="cotegory-tittle">
-        <span className='cotegor-shop'>SHOP BY COTEGORY</span>
+        <span className='cotegor-shop'>SHOP BY CATEGORY</span>
         <h1>Explore Our Premium Collection</h1>
     </div>
 
@@ -118,12 +123,12 @@ const Home = () => {
       <div className='cards-featured'>
         <span className='our-crt'>OUR PRODUCTS</span>
         <h1>Featured Collection </h1>
-      </div>
 
+      </div>
       <div className='cotegory-card-item'>
 
        {
-        itemscompo.slice(0,4).map((item)=>(
+        itemscompo.slice(0,7).map((item)=>(
           <Carditem key={item._id} text={item.text} images={item.images} style={item.style} icone={item.icone} cross={item.cross}/>
         ))
        }

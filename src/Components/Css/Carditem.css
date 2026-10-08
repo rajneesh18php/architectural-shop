@@ -1,19 +1,34 @@
 .text-size{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 
+}
+.cotegor-cart-sec{
+    height: 350px;
+    width: 100%;
+   
+}
+.cotegor-cart-sec>img{
+    height: 50%;
+    width: 100%;
 }
 .text-size>del{
     font-size: 14px;
     color: gray;
 }
 .card-icone{
-    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
     height: 40px;
     width: 40px;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 5px;
-    text-align: center;
-    padding-top:5px ;
     color: white;
+    cursor: pointer;
+}
+.card-icone:hover{
+    background-color: rgb(237, 67, 5);
+    
 }

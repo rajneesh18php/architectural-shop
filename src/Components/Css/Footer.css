@@ -1,6 +1,6 @@
 
 .footer-main-container{
-    height: 400px;
+    /* height: 400px; */
     background-color: rgb(33, 29, 29);
     display: flex;
     align-items: center;
@@ -8,7 +8,7 @@
     margin-top: 50px;
 }
 .footer-img-log{
-    height: 400px;
+    /* height: 400px; */
     width: 17rem;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@
     gap: 10px;
 }
 .footer-links .item{
-    font-size: 20px;
+    font-size: 14px;
     text-decoration: none;
     color: rgb(246, 135, 8);
 
@@ -63,7 +63,7 @@
 
 }
 .footer-link2 .item{
-   font-size: 20px;
+   font-size: 14px;
     text-decoration: none;
     color: rgb(246, 135, 8);
 
@@ -92,20 +92,20 @@
 }
 
 .footer-send-email>input{
-    height: 30px;
-    width: 200px;
-    border-right: none;
-    border-left: 2px solid goldenrod;
+    
+  border: none;
+    outline: 1px solid rgb(246, 135, 8);
+    /* border-left: 2px solid goldenrod;
     border-top: 2px solid goldenrod;
-    border-bottom: 2px solid goldenrod;
+    border-bottom: 2px solid goldenrod; */
+    padding: 5px ;
     border-radius: 5px 0px 0px 5px;
 }
 .footer-send-icone{
-    height: 30px;
-    width: 50px;
-    background-color: rgb(93, 43, 7);
+  padding: 5px;
+    background-color:  rgb(246, 135, 8);
     border-radius: 0px 10px 10px 0px;
-
+  outline: 1px solid rgb(246, 135, 8);
 }
 .send-icone{
     text-align: center;

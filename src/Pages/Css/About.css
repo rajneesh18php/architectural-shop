@@ -40,11 +40,11 @@ background:  linear-gradient(to right, black 0%, transparent 60%);
     color: rgb(255, 94, 0);
 }
 .about-btn{
-    height: 40px;
-    width: 150px;
-    background-color: rgb(255, 94, 0);
+    width: 150px; 
+    background-color: orangered;
     color: white;
     border-radius: 10px;
+    padding: 10px;
     border: none;
     display: flex;
     align-items: center;
