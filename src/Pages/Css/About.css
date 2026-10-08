@@ -1,0 +1,184 @@
+.about-img{
+    height: 500px;
+    
+    position: relative;
+background:  linear-gradient(to right, black 0%, transparent 60%);
+
+    background-image: url('/Images/about.jpg');
+    background-size: 100% 100%;
+
+}
+.about-img>img{
+    height: 500px;
+    
+
+    
+}
+.about-content-story{
+    
+    height: 500px;
+   width: 100%;
+    background-color: black;
+    
+    position: absolute;
+    opacity: 0.6;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    
+
+}
+.about-text{
+    height: 300px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: end;
+    gap: 30px;
+    margin: 0rem 40px 50px 0px;
+    color: rgb(255, 94, 0);
+}
+.about-btn{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 17px;
+}
+.about-burty{
+    font-size: 30px;
+    color: white;
+}
+.about-multi-card{
+    height: 400px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+.about-our{
+    font-size: 30px;
+    margin-left: 40px;
+    color: orange;
+    margin-bottom: 20px;
+}
+.about-card-2{
+    height: 400px;
+    width: 70%;
+    
+}
+.about-content-img{
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    padding-right: 20px;
+}
+.about-4card{
+    
+    height: 350px;
+    width: 80%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 40px;
+    
+}
+.avout-bleave1{
+    height: 150px;
+    width: 250px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+.mission{
+    font-size: 40px;
+}
+.spam-text{
+    margin: 5px;
+}
+.avout-bleave2{
+    height: 150px;
+    width: 250px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+.avout-bleave3{
+    height: 150px;
+    width: 250px;
+    background-color:aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+.avout-bleave4{
+    height: 150px;
+    width: 250px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+/* our team start */
+
+.our-team>h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: rgb(255, 106, 0);
+}
+.about-teame{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 260px;
+    gap: 10px;
+    background-color: antiquewhite;
+    margin-top: 20px;
+}
+.aboute-teame-founder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+   
+     height: 100px;
+     width: 300px;
+}
+
+.about-founder{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+/* our team end */

@@ -1,0 +1,200 @@
+ /* contect start */
+      .contect-heading {
+        color: orangered;
+        padding: 30px;
+        text-align: center;
+        font-size: 20px;
+      }
+      .contect-main {
+        height: 31.25rem;
+        width: 100%;
+        
+      }
+      .contect-cont {
+        height: 450px;
+        width: calc(100% - 200px);
+        margin: 0px auto;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 10px 10px 10px gray;
+        border-radius: 20px;
+      }
+      .contect-balck {
+        background-color: antiquewhite;
+        height: 450px;
+        width: 90%;
+        border-radius: 00px 0px 20px 20px;
+        
+      }
+      .contect-text {
+        background-color: white;
+        height: 440px;
+        width: 100%;
+        border-radius: 00px 0px 20px 20px;
+      }
+      .contect-phone p {
+        color: orangered;
+        font-size: 20px;
+        word-spacing: 15px;
+      }
+      .contect-phone {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 30px;
+        
+      }
+      .heading {
+        color: orangered;
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+      }
+      .heading:hover{
+        color: orangered;
+      }
+      .contect-i{
+        color: rgb(255, 94, 0);
+        display: flex;
+        align-items: flex-end;
+        justify-content: start;
+        position:relative;
+        top: 5rem;
+        left: 30px;
+        font-size: 30px;
+        gap: 10px;
+      }
+      .contect-i p:hover{
+        color: orangered;
+      }
+      .contect-phone p:hover{
+        color: orangered;
+
+      }
+      .lable{
+        display: flex;
+        margin: 20px;
+        justify-content: center;
+        gap: 30px;
+      }
+      .name{
+        display: flex;
+        flex-direction: column;
+      }
+      .name label{
+        font-size: 20px;
+        color: orangered;
+        padding-top: 20px;
+      }
+      .name input{
+        height: 40px;
+        width: 200px;
+        border-bottom: 2px solid orangered;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+      .email{
+        display: flex;
+        flex-direction: column;
+      }
+      .email label{
+        padding-top:20px ;
+        font-size: 20px;
+        color: orangered;
+      }
+      .email input{
+        height: 40px;
+        width: 200px;
+        border-bottom: 2px solid orangered;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+      .massage{
+        display: flex;
+        flex-direction: column;
+        margin-left: 66px;
+
+      }
+      .massage label{
+        color: orangered;
+        font-size: 25px;
+
+      }
+      .massage input{
+        height: 40px;
+        width: 430px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid orangered;
+    }
+    .send{
+        height: 50px;
+        width: 150px;
+        background-color: orangered;
+        color: white;
+        margin-top: 40px;
+        margin-left: 66px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 18px;
+
+    }
+      /* contect end */
+
+      /* map */
+      .map{
+        width: 50rem;
+        height: 300px;
+          
+    }
+    .map-outer{
+        height: 300px;
+          width: calc(100% - 200px);
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+          
+          margin: 0 auto;
+
+      }
+      .contect-multi-icone{
+        
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+      }
+      .contect-call{
+        margin-top: 30px;
+        margin-left: 30px;
+        height: 60px;
+        width: 250px;
+        background-color: beige;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px gray;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 20px;
+      }
+      .call-cone{
+        font-size: 30px;
+      }
+      .spam-call{
+        background-color: orange;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        border-radius: 10px;
+        padding-top: 5px;
+      }
+      /* map */

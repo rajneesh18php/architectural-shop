@@ -1,0 +1,19 @@
+.text-size{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.text-size>del{
+    font-size: 14px;
+    color: gray;
+}
+.card-icone{
+    background-color: orange;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top:5px ;
+    color: white;
+}

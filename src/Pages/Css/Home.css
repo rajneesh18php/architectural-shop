@@ -1,0 +1,77 @@
+.cotegory-card-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.corousel-start img{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+.cotegory-card-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.cotegory-tittle{
+    text-align: center;
+    padding: 20px;
+    color: rgb(246, 135, 8);
+}
+.cotegor-shop{
+    letter-spacing: 5px;
+}
+.premium-cecurity{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+    height: 200px;
+    margin-top: 20px
+   
+  
+}
+.security-icone-text{
+    height: 200px;
+
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.security-icone{
+    font-size: 50px;
+}
+.security-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text{
+    font-size: 13px;
+}
+
+/* card featured start*/
+
+.cards-featured{
+    padding: 20px;
+    text-align: center;
+    color:rgb(246, 135, 8) ;
+
+}
+.our-crt{
+    letter-spacing: 6px;
+}
+/* card featured end*/
+
+/* second card start */
+.cotegory-card-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+/* second card end */
