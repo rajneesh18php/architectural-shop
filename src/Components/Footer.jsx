@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-quick-link">
-            <h2 className='footer-qu'>Quick Links</h2>
+            <h3 className='footer-qu'>Quick Links</h3>
             <ul className='footer-links'>
                 <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Home</NavLink>
                 <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Furniture</NavLink>
@@ -32,7 +32,7 @@ const Footer = () => {
             </ul>
         </div>
         <div className="footer-cutomer-soport">
-            <h2 className='footer-he'>Customer Support </h2>
+            <h3 className='footer-he'>Customer Support </h3>
             <ul className='footer-link2'>
                  <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">FAQs</NavLink>
                 <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Shopping Policy</NavLink>
@@ -42,7 +42,7 @@ const Footer = () => {
             </ul>
         </div>
         <div className="footer-stey-conect">
-          <h2 className='footer-stey'>Stay Connected</h2>
+          <h3 className='footer-stey'>Stay Connected</h3>
           <span className='footer-content-text'>Join our newsietter for latest offers and update </span>
           <div className='footer-send-email'>
             <input type="email" placeholder='Enter Your email address' />

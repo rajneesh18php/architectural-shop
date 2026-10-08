@@ -1,5 +1,5 @@
 import React from 'react'
-import './Css/Carditem.css'
+import './Css/Cotegory.css'
 const Carditem = ({key,text,images,style,icone,cross}) => {
   return (
     <>
@@ -11,7 +11,7 @@ const Carditem = ({key,text,images,style,icone,cross}) => {
             <h3 className='cotegory-g'>{text}</h3>
             <div className='cotegory-tect'>
               <spam className='text-size'>₹{style} <del>₹{cross }</del></spam>
-               <span className='card-icone'>{icone}</span>
+               <span className='card-icons'>{icone}</span>
             </div>
         </div>
         </div>
