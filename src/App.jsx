@@ -14,6 +14,7 @@ import Furniture from './products/Furniture'
 import Steeless from './products/Steeless'
 import Railing from './products/Railing'
 import Balcony from './products/Balcony'
+import Fabrication from './products/Fabrication'
 const App = () => {
   return (
     <>
@@ -32,6 +33,7 @@ const App = () => {
         <Route path='/steeless' element={<Steeless/>}/>
         <Route path='/realing' element={<Railing/>}/>
         <Route path='/balcony' element={<Balcony/>}/>
+        <Route path='/fabrication' element={<Fabrication/>}/>
           
       </Routes>
      </Router>

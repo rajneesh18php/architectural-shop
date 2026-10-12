@@ -45,7 +45,7 @@ const Header = () => {
             <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/steeless">Stainless Steel Gates</NavLink></li>      
             <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/realing">Staircase Railing</NavLink></li>
             <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/balcony">Balcony Railing</NavLink></li>           
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">MS/Steel Fabrication</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/fabrication">MS/Steel Fabrication</NavLink></li>
             </ul>
           </li>
 
