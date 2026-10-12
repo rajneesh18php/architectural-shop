@@ -40,14 +40,11 @@ const Header = () => {
 
           <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">Products<IoMdArrowDropdown /></NavLink>
             <ul className='header-sub-ul-3'>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">Steel Gates</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">Furniture</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">Stainless Steel Gates</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">Aliuminium Gates</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">Staircase Railing</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">Balcony Railing</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">Aluminium Windows</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">Aluminium Doors</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/steel">Steel Gates</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/furniture">Furniture</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/steeless">Stainless Steel Gates</NavLink></li>      
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/realing">Staircase Railing</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/balcony">Balcony Railing</NavLink></li>           
             <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">MS/Steel Fabrication</NavLink></li>
             </ul>
           </li>
