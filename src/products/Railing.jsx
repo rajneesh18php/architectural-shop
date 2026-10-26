@@ -2,7 +2,10 @@ import './Css/Realing.css'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import { FaShoppingCart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 const Railing = () => {
+    const navigate = useNavigate();
+    const handleAddToCart = (product) => navigate("/carts", { state: { product: { _id: product._id, text: product.text, images: product.images, style: product.style, cross: product.cross } } });
 
     const railingItem=[
         {_id:1,text:"Luxury Dining Chair",images:'/Images/r1.jpg',style:"8,999", icone:<FaShoppingCart/>, cross:"15,999"},
@@ -33,7 +36,7 @@ const Railing = () => {
                                 </div>
                                 <div >⭐⭐⭐⭐</div>
                             </div>
-                        <button className="railing-add-to-cart-button">{r.icone} Add to Cart</button>
+                        <button className="railing-add-to-cart-button" onClick={() => handleAddToCart(r)}>{r.icone} Add to Cart</button>
                     </div>
 
             ))

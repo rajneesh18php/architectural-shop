@@ -2,8 +2,11 @@ import Header from '../Components/Header'
 import './Css/Furniture.css'
 import Footer from '../Components/Footer'
 import { FaShoppingCart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Furniture = () => {
+    const navigate = useNavigate();
+    const handleAddToCart = (product) => navigate("/carts", { state: { product: { _id: product._id, text: product.text, images: product.images, style: product.style, cross: product.cross } } });
 
     let furniture=[
         {_id:1,text:"Luxury Dining Chair",images:'/Images/fe1.jpg',style:"8,999", icone:<FaShoppingCart/>, cross:"15,999"},
@@ -38,7 +41,7 @@ const Furniture = () => {
                             </div>
                             <div >⭐⭐⭐⭐</div>
                           </div>
-                        <button className="add-to-cart-button-furniture">{product.icone} Add to Cart</button>
+                        <button className="add-to-cart-button-furniture" onClick={() => handleAddToCart(product)}>{product.icone} Add to Cart</button>
 
                         
                     </div>

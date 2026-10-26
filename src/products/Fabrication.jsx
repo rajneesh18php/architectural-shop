@@ -2,7 +2,11 @@ import './Css/Fabrication.css'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import { FaShoppingCart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 const Fabrication = () => {
+  const navigate = useNavigate();
+  const handleAddToCart = (product) => navigate("/carts", { state: { product: { _id: product._id, text: product.text, images: product.images, style: product.style, cross: product.cross } } });
+
   const fabrication=[
                     {_id:1,text:"Luxury Dining Chair",images:'/Images/f2.jpg',style:"8,999", icone:<FaShoppingCart/>, cross:"15,999"},
                     {_id:2,text:"Modern Coffee Table",images:'/Images/f3.jpg',style:"12,999", icone:<FaShoppingCart/>, cross:"20,999"},
@@ -35,7 +39,7 @@ const Fabrication = () => {
                                 </div>
                                 <div >⭐⭐⭐⭐</div>
                             </div>
-                        <button className="fab-add-to-cart-button">{fab.icone} Add to Cart</button>
+                        <button className="fab-add-to-cart-button" onClick={() => handleAddToCart(fab)}>{fab.icone} Add to Cart</button>
                     </div>
           ))
         }

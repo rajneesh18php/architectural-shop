@@ -1,200 +1,473 @@
- /* contect start */
-      .contect-heading {
-        color: orangered;
-        padding: 30px;
-        text-align: center;
-        font-size: 20px;
-      }
-      .contect-main {
-        height: 31.25rem;
-        width: 100%;
-        
-      }
-      .contect-cont {
-        height: 450px;
-        width: calc(100% - 200px);
-        margin: 0px auto;
-       
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 10px 10px 10px gray;
-        border-radius: 20px;
-      }
-      .contect-balck {
-        background-color: antiquewhite;
-        height: 450px;
-        width: 90%;
-        border-radius: 00px 0px 20px 20px;
-        
-      }
-      .contect-text {
-        background-color: white;
-        height: 440px;
-        width: 100%;
-        border-radius: 00px 0px 20px 20px;
-      }
-      .contect-phone p {
-        color: orangered;
-        font-size: 20px;
-        word-spacing: 15px;
-      }
-      .contect-phone {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        margin: 30px;
-        
-      }
-      .heading {
-        color: orangered;
-        text-align: center;
-        padding: 20px;
-        font-size: 25px;
-      }
-      .heading:hover{
-        color: orangered;
-      }
-      .contect-i{
-        color: rgb(255, 94, 0);
-        display: flex;
-        align-items: flex-end;
-        justify-content: start;
-        position:relative;
-        top: 5rem;
-        left: 30px;
-        font-size: 30px;
-        gap: 10px;
-      }
-      .contect-i p:hover{
-        color: orangered;
-      }
-      .contect-phone p:hover{
-        color: orangered;
+.contect-heading {
+  position: relative;
+  overflow: hidden;
+  padding: 64px 20px 58px;
+  color: #fff;
+  background:
+    linear-gradient(115deg, rgba(25, 34, 28, .94), rgba(38, 45, 37, .78)),
+    url("/Images/doore.jpg") center 48% / cover;
+  text-align: center;
+  animation: contact-fade-in .65s ease-out both;
+}
 
-      }
-      .lable{
-        display: flex;
-        margin: 20px;
-        justify-content: center;
-        gap: 30px;
-      }
-      .name{
-        display: flex;
-        flex-direction: column;
-      }
-      .name label{
-        font-size: 20px;
-        color: orangered;
-        padding-top: 20px;
-      }
-      .name input{
-        height: 40px;
-        width: 200px;
-        border-bottom: 2px solid orangered;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-      }
-      .email{
-        display: flex;
-        flex-direction: column;
-      }
-      .email label{
-        padding-top:20px ;
-        font-size: 20px;
-        color: orangered;
-      }
-      .email input{
-        height: 40px;
-        width: 200px;
-        border-bottom: 2px solid orangered;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-      }
-      .massage{
-        display: flex;
-        flex-direction: column;
-        margin-left: 66px;
+.contect-heading::after {
+  position: absolute;
+  top: -125px;
+  right: 10%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 50%;
+  content: "";
+}
 
-      }
-      .massage label{
-        color: orangered;
-        font-size: 25px;
+.contect-heading h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  font-weight: 500;
+}
 
-      }
-      .massage input{
-        height: 40px;
-        width: 430px;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 2px solid orangered;
-    }
-    .send{
-        height: 50px;
-        width: 150px;
-        background-color: orangered;
-        color: white;
-        margin-top: 40px;
-        margin-left: 66px;
-        border: none;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 18px;
+.contect-heading p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: rgba(255, 255, 255, .78);
+  font-size: 1rem;
+  line-height: 1.7;
+}
 
-    }
-      /* contect end */
+.contect-main {
+  width: min(100% - 40px, 1180px);
+  height: auto;
+  margin: 54px auto 68px;
+}
 
-      /* map */
-      .map{
-        width: 50rem;
-        height: 300px;
-          
-    }
-    .map-outer{
-        height: 300px;
-          width: calc(100% - 200px);
-         display: flex;
-         align-items: center;
-         justify-content: space-around;
-          
-          margin: 0 auto;
+.contect-cont {
+  width: 100%;
+  height: auto;
+  min-height: 490px;
+  display: grid;
+  grid-template-columns: minmax(280px, .82fr) minmax(0, 1.5fr);
+  align-items: stretch;
+  overflow: hidden;
+  border: 1px solid #eae5dc;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 20px 54px rgba(32, 39, 35, .11);
+  animation: contact-card-enter .7s .08s ease-out both;
+}
 
-      }
-      .contect-multi-icone{
-        
-        height: 300px;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 0px;
-      }
-      .contect-call{
-        margin-top: 30px;
-        margin-left: 30px;
-        height: 60px;
-        width: 250px;
-        background-color: beige;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px gray;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        font-size: 20px;
-      }
-      .call-cone{
-        font-size: 30px;
-      }
-      .spam-call{
-        background-color: orange;
-        height: 40px;
-        width: 40px;
-        text-align: center;
-        border-radius: 10px;
-        padding-top: 5px;
-      }
-      /* map */
+.contect-balck {
+  position: relative;
+  min-height: 490px;
+  display: flex;
+  flex-direction: column;
+  padding: 38px 30px;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(circle at 100% 100%, rgba(188, 120, 61, .27), transparent 38%),
+    #202723;
+}
+
+.contect-balck::after {
+  position: absolute;
+  right: -55px;
+  bottom: -85px;
+  width: 210px;
+  height: 210px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 50%;
+  content: "";
+}
+
+.heading {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  color: #fff;
+  text-align: left;
+}
+
+.heading h2 {
+  margin: 0 0 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.heading p {
+  margin: 0;
+  color: #c3c8c1;
+  font-size: .9rem;
+}
+
+.contect-phone {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin: 38px 0;
+}
+
+.contect-phone p {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 0;
+  color: #e0e3de;
+  font-size: .95rem;
+  word-spacing: normal;
+  transition: color .2s ease, transform .2s ease;
+}
+
+.contect-phone p svg {
+  flex: 0 0 auto;
+  color: #e2b486;
+  font-size: 21px;
+}
+
+.contect-phone p:hover {
+  transform: translateX(3px);
+  color: #fff;
+}
+
+.contect-i {
+  position: relative;
+  z-index: 1;
+  top: auto;
+  left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  color: #e2b486;
+}
+
+.contect-i p {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color .2s ease, background .2s ease, transform .2s ease;
+}
+
+.contect-i p:hover {
+  transform: translateY(-3px);
+  color: #fff;
+  background: #bc783d;
+}
+
+.contect-text {
+  min-width: 0;
+  min-height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px clamp(24px, 5vw, 68px);
+  background: #fff;
+}
+
+.lable {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0 0 22px;
+}
+
+.name,
+.email,
+.massage {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.name label,
+.email label,
+.massage label {
+  padding: 0;
+  color: #414841;
+  font-size: .87rem;
+  font-weight: 650;
+}
+
+.name input,
+.email input,
+.massage input {
+  width: 100%;
+  height: 45px;
+  padding: 0 12px;
+  border: 1px solid #dedbd4;
+  border-radius: 5px;
+  outline: none;
+  color: #252b26;
+  background: #fff;
+  font: inherit;
+  font-size: .9rem;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.name input::placeholder,
+.email input::placeholder,
+.massage input::placeholder {
+  color: #a0a49e;
+}
+
+.name input:focus,
+.email input:focus,
+.massage input:focus {
+  border-color: #bc783d;
+  box-shadow: 0 0 0 3px rgba(188, 120, 61, .12);
+}
+
+.massage {
+  margin: 0;
+}
+
+.send {
+  min-width: 155px;
+  min-height: 46px;
+  align-self: flex-start;
+  margin: 23px 0 0;
+  padding: 11px 18px;
+  border: 1px solid #bc783d;
+  border-radius: 5px;
+  color: #fff;
+  background: #bc783d;
+  font-size: .92rem;
+  font-weight: 650;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+}
+
+.send:hover {
+  transform: translateY(-2px);
+  border-color: #a86631;
+  background: #a86631;
+}
+
+.map-outer {
+  width: min(100% - 40px, 1180px);
+  height: auto;
+  margin: 0 auto 76px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  align-items: stretch;
+  gap: 24px;
+}
+
+.map {
+  width: 100%;
+  height: 360px;
+  display: block;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 12px 34px rgba(32, 39, 35, .1);
+}
+
+.contect-multi-icone {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: center;
+  gap: 13px;
+}
+
+.contect-call {
+  min-width: 0;
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 13px;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid #ebe6de;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 7px 22px rgba(37, 42, 38, .055);
+  font-size: 1rem;
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.contect-call:hover {
+  transform: translateY(-3px);
+  border-color: #d9b18d;
+  box-shadow: 0 13px 28px rgba(37, 42, 38, .1);
+}
+
+.spam-call {
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border-radius: 8px;
+  color: #a86631;
+  background: #f6ece1;
+}
+
+.call-cone {
+  font-size: 21px;
+}
+
+.call-content {
+  min-width: 0;
+}
+
+.call-content h4 {
+  margin: 0 0 5px;
+  color: #333a34;
+  font-size: .85rem;
+  font-weight: 650;
+}
+
+.call-content span {
+  display: block;
+  overflow-wrap: anywhere;
+  color: #777d76;
+  font-size: .78rem;
+}
+
+@keyframes contact-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes contact-card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .contect-main,
+  .map-outer {
+    width: min(100% - 32px, 700px);
+  }
+
+  .contect-cont {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contect-balck {
+    min-height: 340px;
+  }
+
+  .contect-text {
+    min-height: 430px;
+  }
+
+  .map-outer {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .map {
+    height: 320px;
+  }
+}
+
+@media (max-width: 560px) {
+  .contect-heading {
+    padding: 48px 18px;
+  }
+
+  .contect-heading p br {
+    display: none;
+  }
+
+  .contect-main {
+    width: calc(100% - 24px);
+    margin: 30px auto 44px;
+  }
+
+  .contect-cont {
+    border-radius: 10px;
+  }
+
+  .contect-balck {
+    min-height: 320px;
+    padding: 28px 22px;
+  }
+
+  .contect-phone {
+    gap: 18px;
+    margin: 27px 0;
+  }
+
+  .contect-text {
+    min-height: 0;
+    padding: 28px 20px;
+  }
+
+  .lable {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+    margin-bottom: 17px;
+  }
+
+  .map-outer {
+    width: calc(100% - 24px);
+    margin-bottom: 50px;
+    gap: 16px;
+  }
+
+  .map {
+    height: 270px;
+  }
+
+  .contect-multi-icone {
+    gap: 9px;
+  }
+
+  .contect-call {
+    min-height: 78px;
+    gap: 9px;
+    padding: 10px;
+  }
+
+  .spam-call {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .call-content span {
+    font-size: .7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contect-heading,
+  .contect-cont {
+    animation: none;
+  }
+
+  .contect-phone p,
+  .contect-i p,
+  .name input,
+  .email input,
+  .massage input,
+  .send,
+  .contect-call {
+    transition: none;
+  }
+}

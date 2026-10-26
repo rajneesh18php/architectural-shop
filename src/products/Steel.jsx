@@ -3,8 +3,12 @@ import Header from '../Components/Header'
 import { FaShoppingCart } from "react-icons/fa";
 import './Css/Steel.css'
 import Footer from '../Components/Footer';
+import { useNavigate } from "react-router-dom";
 
 const Steel = () => {
+    const navigate = useNavigate();
+    const handleAddToCart = (product) => navigate("/carts", { state: { product: { _id: product._id, text: product.text, images: product.images, style: product.style, cross: product.cross } } });
+
     let steel=[
         {_id:1,text:"Designer main Gate",images:'/Images/st1.webp',style:"32,999", icone:<FaShoppingCart/>, cross:"45,999"},
         {_id:2,text:"Modern Steel Door",images:'/Images/st2.webp',style:"35,999", icone:<FaShoppingCart/>, cross:"48,999"},
@@ -43,7 +47,7 @@ const Steel = () => {
                         <div className="rating">⭐⭐⭐⭐</div>
                         </div>
                     
-                    <button className="add-to-cart-button">{product.icone} Add to Cart</button>
+                    <button className="add-to-cart-button" onClick={() => handleAddToCart(product)}>{product.icone} Add to Cart</button>
 
                     
                 </div>

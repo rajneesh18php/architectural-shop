@@ -2,8 +2,10 @@ import "./Css/Steeless.css"
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import { FaShoppingCart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 const Steeless = () => {
-   
+    const navigate = useNavigate();
+    const handleAddToCart = (product) => navigate("/carts", { state: { product: { _id: product._id, text: product.text, images: product.images, style: product.style, cross: product.cross } } });
 
 
     const steelessData = [
@@ -34,7 +36,7 @@ const Steeless = () => {
                                 </div>
                                 <div >⭐⭐⭐⭐</div>
                             </div>
-                        <button className="steeless-add-to-cart-button">{product.icone} Add to Cart</button>
+                        <button className="steeless-add-to-cart-button" onClick={() => handleAddToCart(product)}>{product.icone} Add to Cart</button>
                     </div>
                 ))
             }

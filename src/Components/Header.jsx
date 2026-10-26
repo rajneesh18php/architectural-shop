@@ -1,4 +1,3 @@
-import React from 'react'
 import './Css/Header.css'
 import { NavLink } from 'react-router-dom'
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -15,9 +14,9 @@ const Header = () => {
           
           <ul className='header-sub-ul'>
             <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/products">Products</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery">Premium Steel</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery">Featured products</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery">Get Quote button</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/steel">Premium Steel</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/#featured-products">Featured products</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/contact">Get a quote</NavLink></li>
             
             </ul>
           </li>
@@ -29,9 +28,9 @@ const Header = () => {
 
           <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/about">About<IoMdArrowDropdown /></NavLink>
             <ul className='header-sub-ul-2'>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/about">Company Profile</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/about">Experience</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/about">Customer Satisfaction</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/about#company-profile">Company Profile</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/about#experience">Experience</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/about#customer-satisfaction">Customer Satisfaction</NavLink></li>
             </ul>
           </li>
 
@@ -54,10 +53,10 @@ const Header = () => {
 
           <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery">Gallery<IoMdArrowDropdown /></NavLink>
           <ul className='header-sub-ul-4'>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery">Completed Projects</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery">Railing Designs</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery">Aluminium work</NavLink></li>
-            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery">Before/After Photos</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery/completed-projects">Completed Projects</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery/railing-designs">Railing Designs</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery/aluminium-work">Aluminium work</NavLink></li>
+            <li> <NavLink className={({ isActive }) =>`item ${isActive ? 'active' : ''}`} to="/gallery/before-after">Before/After Photos</NavLink></li>
             
             
               </ul>

@@ -2,7 +2,11 @@ import './Css/Bolcony.css'
 import { FaShoppingCart } from "react-icons/fa";
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import { useNavigate } from "react-router-dom";
 const Balcony = () => {
+    const navigate = useNavigate();
+    const handleAddToCart = (product) => navigate("/carts", { state: { product: { _id: product._id, text: product.text, images: product.images, style: product.style, cross: product.cross } } });
+
     const bolconyreling=[
         {_id:1,text:"Luxury Dining Chair",images:'/Images/b1.jpg',style:"8,999", icone:<FaShoppingCart/>, cross:"15,999"},
         {_id:2,text:"Modern Coffee Table",images:'/Images/b2.jpg',style:"12,999", icone:<FaShoppingCart/>, cross:"20,999"},
@@ -32,7 +36,7 @@ const Balcony = () => {
                                 </div>
                                 <div >⭐⭐⭐⭐</div>
                             </div>
-                        <button className="balcony-add-to-cart-button">{balcony.icone} Add to Cart</button>
+                        <button className="balcony-add-to-cart-button" onClick={() => handleAddToCart(balcony)}>{balcony.icone} Add to Cart</button>
                     </div>
 
 
