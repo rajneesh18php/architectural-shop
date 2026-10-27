@@ -1,11 +1,9 @@
-import React from 'react'
-import Footer from './Components/Footer'
-
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import About from './Pages/About'
+import CompanyProfile from './Pages/CompanyProfile'
+import CustomerSatisfaction from './Pages/CustomerSatisfaction'
 import Contect from './Pages/Contect'
-import Header from './Components/Header'
 import Product from './Pages/Product'
 import Gallery from './Pages/Gallery'
 import Services from './Pages/Servies'
@@ -27,6 +25,8 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/contact' element={<Contect/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/company-profile' element={<CompanyProfile/>}/>
+        <Route path='/customer-satisfaction' element={<CustomerSatisfaction/>}/>
         <Route path='/products' element={<Product/>}/>
         <Route path='/gallery' element={<Gallery/>}/>
         <Route path='/gallery/:category' element={<Gallery/>}/>

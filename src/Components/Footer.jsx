@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Css/Footer.css"
 import { NavLink } from 'react-router-dom'
 import { IoMdSend } from "react-icons/io";
@@ -21,24 +20,23 @@ const Footer = () => {
         <div className="footer-quick-link">
             <h3 className='footer-qu'>Quick Links</h3>
             <ul className='footer-links'>
-                <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Home</NavLink>
-                <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Furniture</NavLink>
-                <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Doors</NavLink>
-                <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Gates</NavLink>
-                <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Chairs</NavLink>
-                <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">AboutUs</NavLink>
-                <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Contact</NavLink>
-                
+                <li><NavLink end className={({isActive})=>`item ${isActive? "active" :""}`} to="/">Home</NavLink></li>
+                <li><NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="/furniture">Furniture</NavLink></li>
+                <li><NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="/products">Doors</NavLink></li>
+                <li><NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="/steel">Gates</NavLink></li>
+                <li><NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="/furniture">Chairs</NavLink></li>
+                <li><NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="/about">About Us</NavLink></li>
+                <li><NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="/contact">Contact</NavLink></li>
             </ul>
         </div>
         <div className="footer-cutomer-soport">
             <h3 className='footer-he'>Customer Support </h3>
             <ul className='footer-link2'>
-                 <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">FAQs</NavLink>
-                <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Shopping Policy</NavLink>
-                <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Return & Refund</NavLink>
-                <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Tearms & Condition</NavLink>
-                <NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="">Privacy Policy</NavLink>
+                <li><NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="/contact">FAQs</NavLink></li>
+                <li><NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="/services">Shopping Policy</NavLink></li>
+                <li><NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="/contact">Return &amp; Refund</NavLink></li>
+                <li><NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="/services">Terms &amp; Conditions</NavLink></li>
+                <li><NavLink className={({isActive})=>`item ${isActive? "active" :""}`} to="/about">Privacy Policy</NavLink></li>
             </ul>
         </div>
         <div className="footer-stey-conect">

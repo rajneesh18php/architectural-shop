@@ -28,3 +28,14 @@ git pull origin main
 
 git remote add origin YOUR_GITHUB_REPOSITORY_URL
 git pull origin main
+
+## Razorpay checkout
+
+### React-only hosted Payment Button (test mode)
+
+1. In the Razorpay Dashboard, switch to **Test Mode** and create a Payment Button.
+2. Copy its public Payment Button ID (not your key secret).
+3. Add `VITE_RAZORPAY_PAYMENT_BUTTON_ID=pl_...` to `.env.local` in the project root, then restart Vite with `npm run dev`.
+4. Choose a product, proceed to checkout, and click the hosted **Place Order** button to open Razorpay Checkout.
+
+This React-only hosted button uses the amount configured in the Dashboard. It does not create an order for the current cart total, save delivery details, or verify payment on your server. Do not use it as proof of payment for real orders. For production checkout with cart-specific amounts and verified payments, use the server-side order creation and signature verification flow in `server/index.js`; keep `RAZORPAY_KEY_SECRET` only in the server `.env`, never in a `VITE_*` variable or frontend code. Rotate any key secret that has been shared.

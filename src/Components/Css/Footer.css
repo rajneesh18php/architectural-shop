@@ -73,8 +73,14 @@
   padding: 0;
 }
 
+.footer-links > li,
+.footer-link2 > li {
+  list-style: none;
+}
+
 .footer-links .item,
 .footer-link2 .item {
+  display: inline-block;
   color: #c5c8c1;
   font-size: .9rem;
   font-weight: 400;
@@ -84,7 +90,9 @@
 }
 
 .footer-links .item:hover,
-.footer-link2 .item:hover {
+.footer-link2 .item:hover,
+.footer-links .item.active,
+.footer-link2 .item.active {
   transform: translateX(3px);
   color: #e2b486;
 }
